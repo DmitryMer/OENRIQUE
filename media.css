@@ -1,4 +1,6 @@
-	@media screen and (max-width: 1125px) {
+	
+
+	@media screen and (max-width: 1400px) {
 	.fifth__item {
 		margin: 0 auto 20px;
 		}
@@ -36,7 +38,8 @@
 		margin-bottom: 55px;
 		}
 
-	.third__item p {
+	.third__item p, 
+	.seven__item p {
 		font-size: 20px;
 		}
 
@@ -65,6 +68,10 @@
 	.six__item__content p {
 		font-size: 13px;
 		line-height: 20px;
+		}
+
+	.seven__item h3 {
+		font-size: 25px;
 		}
 
 	}
@@ -139,7 +146,8 @@
 		margin: 0 auto 20px;	
 	}
 	
-	.third__item p {
+	.third__item p,
+	.seven__item p {
 		font-size: 18px;
 	}
 
@@ -147,11 +155,11 @@
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-	}
+		}
 
 	.six__item img {
 		margin-bottom: 20px;
-	}
+		}
 
 	.six__item__content h1 {
 		padding-left: 0;
@@ -164,75 +172,108 @@
 
 	@media screen and (max-width: 600px) {
 
-		nav.nav__first {
+	nav.nav__first {
 		display: flex;
 		padding-top: 30px;
 		margin-bottom: 130px;
 		}
 
-		.first__items h1 {
+	.first__items h1 {
 		font-size: 70px;
 		}
 
-		.first__items h4 {
+	.first__items h4 {
 		font-size: 18px;
 		}
 
-		.fifth__items__btns {
+	.fifth__items__btns {
 		padding-bottom: 60px;
 		}
 
-		.six__item {
+	.six__item {
 		margin-bottom: 50px;
+		}
+
+	.seven__item h3 {
+		font-size: 20px;
+		}
+
+	.seven__item p {
+		font-size: 14px;
 		}
 	}
 
 
 	@media screen and (max-width: 470px) {
 
-		nav.nav__first {
+	nav.nav__first {
 		display: flex;
 		padding-top: 25px;
 		margin-bottom: 100px;
 		}
 
-		.first__items h1 {
+	.first__items h1 {
 		font-size: 60px;
 		}
 
-
-		.first__items__btns {
+	.first__items__btns {
 		display: flex;
 		flex-direction: column;
 		width: 160px;
 		margin: 0 auto;
 		}
 
-		.white {
+	.white {
 		margin-bottom: 15px;
 		}
 
-		.transparent {
+	.transparent {
 		margin-left: 0;
 		}
 
-		.first__items__btns {
+	.first__items__btns {
 		padding-bottom: 100px;
 		}
 
-		.fifth__item img {
+	.fifth__item img {
 		max-width: 100%;
 		height: auto;
+		}
+
+	.seven__item p {
+		font-size: 12px;
+		}
+
+	.form__text {
+		display: flex;
+    	flex-direction: column;
+    	margin-bottom: 10px;
+		}
+
+	.form__text #name {
+		margin: 0 auto 20px;
+		width: 56%;
+		height: 40px;
+		}
+
+	.form__text #email {
+		margin: 0 auto;
+		width: 56%;
+		height: 40px;
 		}
 	}
 
 	@media screen and (max-width: 405px) {
 
-		.first__items h1 {
+	.first__items h1 {
 		font-size: 50px;
 		}
 
-		.first__items h4 {
+	.first__items h4 {
 		font-size: 16px;
+		}
+
+	.seven__item p {
+		font-size: 10px;
 		}
 }

@@ -350,7 +350,7 @@ section.fifth__page {
 
 /*six__page*/
 
-.six__page {
+section.six__page {
 	display: block;
 	width: 100%;
 }
@@ -414,6 +414,7 @@ section.fifth__page {
 .seven__items {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 
 	width: 100%;
 }
