@@ -20,7 +20,7 @@ li {
 	list-style: none;
 }
 
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, p, a, ::placeholder {
 	font-family: 'Asap', sans-serif;
 }
 
@@ -53,12 +53,20 @@ h1, h2, h3, h4, p, a {
 	position: absolute;
 	content: '';
 	left: 46%;
-	bottom: 55px;
+	bottom: 70px;
 
     display: block;
     height: 4px;
     width: 60px;
     background: #878787;
+}
+
+.gray__page:last-of-type h1 {
+	color: #fff;
+}
+
+.gray__page:last-of-type h1::after{
+	background: #c1c1c1;
 }
 
 /*first__page*/ 
@@ -177,7 +185,7 @@ nav.nav__first {
 .transparent {
 	display: inline-block;
 
-	padding: 17px 48px;
+	padding: 17px 45px;
 	background: transparent;
 	border: 1px solid #4d4d4d;
 
@@ -270,8 +278,13 @@ section.third__page {
 	flex-direction: column;
 	justify-content: flex-end;
 	text-align: center;
+	margin-bottom: 80px;
 	
 	width: 33.3333%;
+}
+
+.third__item__down {
+	padding-bottom: 70px; 
 }
 
 .third__item img {
@@ -388,6 +401,7 @@ section.fifth__page {
 
 .six__item form {
 	text-align: center;
+	margin: 0 auto;
 }
 
 /*seven__items*/
@@ -430,61 +444,75 @@ section.fifth__page {
 	padding-bottom: 60px;
 }
 
-@media screen and (max-width: 750px) {
+/*footer*/ 
 
-	.nav__text li {
-		display: none;
-	}
 
-	.responsive li {
-		display: flex;
-	}
-	
-	.responsive {
-	display: flex;
+
+footer.footer {
 	position: relative;
-	top: 70px;
-	left: -35%;
-	flex-direction: column;
-	justify-content: space-between; 
-	}
+	background: url(img/footer_bg.jpg) no-repeat;
 
-	.responsive li {
-	margin-bottom: 20px;
-	}
+	background-size: cover;
+	width: 100%;
+}
 
-	.burger__menu {
-  	position: relative;
-  	display: inline-block;
-  	width: 3.24em;
-  	height: 0.8em;
-  	margin-right: 0.3em;
-  	border-top: 0.2em solid #878787;
-  	border-bottom: 0.2em solid #878787;
-	}
+footer.footer:after {
+	position: absolute;
+	content: '';
+	text-align: center;
+	left: 10%;
+	bottom: 90px;
 
-	.burger__menu::before {
- 	content: "";
-  	position: absolute;
-  	top: 0.3em;
-  	left: 0px;
-  	width: 100%;
-  	border-top: 0.2em solid #878787;
-	}
+    display: block;
+    height: 1px;
+    width: 80%;
+    background: #fff;
+}
 
-	.burger__menu:hover {
-	border-color: #fff; 
+footer form {
+	text-align: center;
+	margin: 0 auto;
+}
+
+::placeholder {
+	font-weight: 600;
+}
+
+.form__text {
+	margin-bottom: 29px;
+}
+
+#name {
+	width: 27%;
+	height: 55px;
+	margin-right: 15px;
+}
+
+#email {
+	width: 27%;
+	height: 55px;
+	margin-left: 15px;
+}
+
+#message {
+	width: 57%;
+	height: 205px;
+	margin-bottom: 30px;
+}
+
+#message::placeholder {
+	position: relative;
+	top: 20px;
+}
+
+.footer button {
+	padding: 10px 20px;
+	font-weight: 600;
+	margin-bottom: 90px;
+}
+
+.footer p {
+	text-align: center;
 	color: #fff;
-	cursor: pointer;
-	}
-
-	.burger__menu:hover::before {
-	content: "";
-  	position: absolute;
-  	top: 0.3em;
-  	left: 0px;
-  	width: 100%;
-  	border-top: 0.2em solid #fff;
-	}
-
+	padding-bottom: 35px;
 }
